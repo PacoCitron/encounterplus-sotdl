@@ -1,0 +1,34 @@
+{
+    "sections": [
+      {
+        "type": "group",
+        "fields": [
+          {
+            "title": "Attributes",
+            "type": "text",
+            "attribute": "data.levelAttribute",
+            "attributeType": "Attributes"
+          },
+          {
+            "title": "Characteristics",
+            "type": "text",
+            "attribute": "data.levelCharacteristics"
+          },
+          {
+            "title": "Language.Profession",
+            "type": "textArea",
+            "attribute": "data.levelLangProf"
+          }
+        ]
+      },
+      {
+        "title": "Common.Talent",
+        "type": "list",
+        "attribute": "data.levelTalent",
+        "form": {
+          "title": "Common.Talent",
+          "partial": "generic-feature"
+        }
+      }
+    ]
+  }

@@ -2,54 +2,55 @@
   "title": "Spell",
   "sections": [
     {
+      "title": "BasicInformations",
       "type": "group",
       "fields": [
         {
-          "title": "Spell.Tradition",
+          "title": "Common.Tradition",
           "type": "picker",
-          "attribute": "data.spellTradition",
-          "attributeType": "SpellTradition"
+          "attribute": "data.tradition",
+          "attributeType": "Tradition"
         },
         {
-          "title": "Spell.Type",
+          "title": "Common.Type",
           "type": "picker",
           "attribute": "data.spellType",
           "attributeType": "SpellType"
         },
         {
-          "title": "Spell.Rank",
+          "title": "Common.Rank",
           "type": "picker",
-          "attribute": "data.spellRank",
-          "attributeType": "SpellRank"
+          "attribute": "data.rank",
+          "attributeType": "Rank"
         },
         {
-          "title": "Spell.Duration",
+          "title": "Common.Duration",
           "type": "form",
           "text": "{% include 'spell-duration.md' data %}",
           "form": {
-            "title": "Spell.Duration",
+            "title": "Common.Duration",
             "sections": [
               {
                 "type": "group",
                 "fields": [
                   {
-                    "title": "Spell.Duration",
+                    "title": "Common.Duration",
                     "type": "number",
                     "attribute": "data.spellDuration"
                   }
                 ]
               },
               {
-                "title": "Spell.DurationUnit",
+                "title": "Common.DurationUnit",
                 "type": "picker",
                 "attribute": "data.durationUnit",
-                "attributeType": "SpellDurationUnit"
+                "attributeType": "DurationUnit"
               },
               {
-                "title": "Spell.DurationSpecific",
+                "title": "Spell.SpecificDuration",
                 "type": "picker",
-                "attribute": "data.durationSpecific",
-                "attributeType": "SpellDurationSpecific"
+                "attribute": "data.specificDuration",
+                "attributeType": "SpellSpecificDuration"
               }
             ]
           }
@@ -57,20 +58,20 @@
       ]
     },
     {
-      "title": "Spell.Options",
+      "title": "Spell.Option",
       "type": "list",
-      "attribute": "data.spellOptions",
+      "attribute": "data.spellOption",
       "form": {
-        "title": "Spell.Options",
+        "title": "Spell.Option",
         "partial": "generic-feature"
       }
     },
     {
-      "title": "Spell.SpecialEffects",
+      "title": "Spell.Effect",
       "type": "list",
-      "attribute": "data.specialEffects",
+      "attribute": "data.spellEffect",
       "form": {
-        "title": "Spell.SpecialEffects",
+        "title": "Spell.Effect",
         "partial": "generic-feature"
       }
     }

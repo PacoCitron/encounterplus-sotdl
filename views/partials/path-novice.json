@@ -1,0 +1,206 @@
+{
+  "views": [
+    {
+      "type": "vStack",
+      "views": [
+        {
+          "type": "text",
+          "style": "ancestrySection",
+          "value": "**{{'Path.Level1'|l|uppercase}}**",
+          "padding": [
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 1.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "vStack",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Attributes'|l}}.** {{data.level1.data.levelAttribute}}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Characteristics'|l}}.** {{data.level1.data.levelCharacteristics}}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Language.Profession'|l}}.** {{data.level1.data.levelLangProf}}"
+        },
+        {
+          "type": "list",
+          "attribute": "data.level1.data.levelTalent",
+          "views": [
+            {
+              "type": "text",
+              "style": "sotdlbody",
+              "value": "**{{name}}** {{text}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vStack",
+      "views": [
+        {
+          "type": "text",
+          "style": "ancestrySection",
+          "value": "**{{'Path.Level2'|l|uppercase}}**",
+          "padding": [
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 1.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "vStack",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Characteristics'|l}}.** {{data.level2.data.levelCharacteristics}}"
+        },
+        {
+          "type": "list",
+          "attribute": "data.level2.data.levelTalent",
+          "views": [
+            {
+              "type": "text",
+              "style": "sotdlbody",
+              "value": "**{{name}}** {{text}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vStack",
+      "views": [
+        {
+          "type": "text",
+          "style": "ancestrySection",
+          "value": "**{{'Path.Level5'|l|uppercase}}**",
+          "padding": [
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 1.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "vStack",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Characteristics'|l}}.** {{data.level5.data.levelCharacteristics}}"
+        },
+        {
+          "type": "list",
+          "attribute": "data.level5.data.levelTalent",
+          "views": [
+            {
+              "type": "text",
+              "style": "sotdlbody",
+              "value": "**{{name}}** {{text}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vStack",
+      "views": [
+        {
+          "type": "text",
+          "style": "ancestrySection",
+          "value": "**{{'Path.Level8'|l|uppercase}}**",
+          "padding": [
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 1.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "vStack",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Characteristics'|l}}.** {{data.level8.data.levelCharacteristics}}"
+        },
+        {
+          "type": "list",
+          "attribute": "data.level8.data.levelTalent",
+          "views": [
+            {
+              "type": "text",
+              "style": "sotdlbody",
+              "value": "**{{name}}** {{text}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

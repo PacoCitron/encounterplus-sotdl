@@ -1,0 +1,62 @@
+{
+  "debug": false,
+  "spacing": 0,
+  "padding": [
+    20
+  ],
+  "views": [
+    {
+      "type": "hStack",
+      "views": [
+        {
+          "type": "text",
+          "style": "entityTitle",
+          "value": "**{{name|uppercase}}**"
+        },
+        {
+          "style": "entitySubtitle",
+          "value": "**{{data.pathType|map: 'PathType'|uppercase|l}}** {% if data.category %}• **{{data.category|map: 'PathCategory'|uppercase|l}}**{% endif %} {% if data.mCategory %}• **{{data.mCategory|map: 'PathMCategory'|uppercase|l}}**{% endif %}",
+          "alignment": "trailing"
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 2.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}"
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "partial",
+      "value": "path-novice",
+      "visibleIf": "{% if data.pathType == 'Novice' %}true{% endif %}"
+    },
+    {
+      "type": "partial",
+      "value": "path-expert",
+      "visibleIf": "{% if data.pathType == 'Expert' %}true{% endif %}"
+    },
+    {
+      "type": "partial",
+      "value": "path-master",
+      "visibleIf": "{% if data.pathType == 'Master' %}true{% endif %}"
+    },
+    {
+      "type": "image",
+      "value": "{{image}}",
+      "link": "{{image}}"
+    }
+  ]
+}

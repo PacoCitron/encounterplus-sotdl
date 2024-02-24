@@ -1,4 +1,28 @@
 {
+  "Ancestry": {
+    "params": [
+      {
+        "attribute": "source",
+        "title": "Source",
+        "dynamic": true
+      }
+    ]
+  },
+  "Complication": {
+    "params": [
+      {
+        "attribute": "source",
+        "title": "Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attribute": "name",
+        "title": "Common.Name"
+      }
+    ]
+  },
   "Creature": {
     "params": [
       {
@@ -46,17 +70,17 @@
       }
     ]
   },
-  "Spell": {
+  "Item": {
     "params": [
       {
-        "attribute": "data.spellTradition",
-        "attributeType": "SpellTradition",
-        "title": "Spell.Tradition"
+        "attribute": "data.itemCategory",
+        "attributeType": "ItemCategory",
+        "title": "Common.ItemCategory"
       },
       {
-        "attribute": "data.spellType",
-        "attributeType": "SpellType",
-        "title": "Spell.Type"
+        "attribute": "data.availability",
+        "attributeType": "Availability",
+        "title": "Common.Availability"
       },
       {
         "attribute": "source",
@@ -66,14 +90,75 @@
     ],
     "group": [
       {
-        "attribute": "data.spellTradition",
-        "attributeType": "SpellTradition",
-        "title": "Spell.Tradition"
+        "attribute": "data.itemCategory",
+        "attributeType": "ItemCategory",
+        "title": "Common.ItemCategory"
       },
       {
-        "attribute": "data.spellRank",
-        "text": "{{'Spell.Rank'|l}} {{value}}",
-        "title": "Spell.Rank"
+        "attribute": "name",
+        "title": "Common.Name"
+      }
+    ]
+  },
+  "Path": {
+    "params": [
+      {
+        "attribute": "data.pathType",
+        "attributeType": "PathType",
+        "title": "Path.Type"
+      },
+      {
+        "attribute": "source",
+        "title": "Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attribute": "data.pathType",
+        "attributeType": "PathType",
+        "title": "Path.Type"
+      },
+      {
+        "attribute": "name",
+        "title": "Common.Name"
+      }
+    ],
+    "sort": [
+      {
+        "attribute": "name",
+        "title": "Common.Name"
+      }
+    ]
+  },
+  "Spell": {
+    "params": [
+      {
+        "attribute": "data.tradition",
+        "attributeType": "Tradition",
+        "title": "Common.Tradition"
+      },
+      {
+        "attribute": "data.spellType",
+        "attributeType": "SpellType",
+        "title": "Common.Type"
+      },
+      {
+        "attribute": "source",
+        "title": "Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attribute": "data.tradition",
+        "attributeType": "Tradition",
+        "title": "Common.Tradition"
+      },
+      {
+        "attribute": "data.rank",
+        "text": "{{'Common.Rank'|l}} {{value}}",
+        "title": "Common.Rank"
       },
       {
         "attribute": "source",

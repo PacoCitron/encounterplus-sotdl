@@ -1,0 +1,158 @@
+{
+  "views": [
+    {
+      "type": "vStack",
+      "views": [
+        {
+          "type": "text",
+          "style": "ancestrySection",
+          "value": "**{{'Path.Level3'|l|uppercase}}**",
+          "padding": [
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 1.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "vStack",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Attributes'|l}}.** {{data.level3.data.levelAttribute}}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Characteristics'|l}}.** {{data.level3.data.levelCharacteristics}}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Language.Profession'|l}}.** {{data.level3.data.levelLangProf}}"
+        },
+        {
+          "type": "list",
+          "attribute": "data.level3.data.levelTalent",
+          "views": [
+            {
+              "type": "text",
+              "style": "sotdlbody",
+              "value": "**{{name}}** {{text}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vStack",
+      "views": [
+        {
+          "type": "text",
+          "style": "ancestrySection",
+          "value": "**{{'Path.Level6'|l|uppercase}}**",
+          "padding": [
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 1.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "vStack",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Characteristics'|l}}.** {{data.level6.data.levelCharacteristics}}"
+        },
+        {
+          "type": "list",
+          "attribute": "data.level6.data.levelTalent",
+          "views": [
+            {
+              "type": "text",
+              "style": "sotdlbody",
+              "value": "**{{name}}** {{text}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vStack",
+      "views": [
+        {
+          "type": "text",
+          "style": "ancestrySection",
+          "value": "**{{'Path.Level9'|l|uppercase}}**",
+          "padding": [
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 1.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "vStack",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Characteristics'|l}}.** {{data.level9.data.levelCharacteristics}}"
+        },
+        {
+          "type": "list",
+          "attribute": "data.level9.data.levelTalent",
+          "views": [
+            {
+              "type": "text",
+              "style": "sotdlbody",
+              "value": "**{{name}}** {{text}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

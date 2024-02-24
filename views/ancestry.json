@@ -1,0 +1,165 @@
+{
+  "debug": false,
+  "spacing": 0,
+  "padding": [ 
+    20
+  ],
+  "views": [
+    {
+      "style": "entityTitle",
+      "value": "**{{name|uppercase}}**",
+      "link": "https://www.google.com/search?tbm=isch&q=Shadow+of+the+Demon+Lord+{{name}}"
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 2.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}"
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "vStack",
+      "views": [
+        {
+          "type": "text",
+          "style": "ancestrySection",
+          "value": "{% if name %}**{{'Creating'|l|uppercase}} {{name|uppercase}}*{% endif %}*",
+          "padding": [
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 1.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "vStack",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Starting.Attributes'|l}} :** {{'Attribute.Strength'|l}} {{data.attributeStrength|default: 10}}, {{'Attribute.Agility'|l}} {{data.attributeAgility|default: 10}}, {{'Attribute.Intellect'|l}} {{data.attributeIntellect|default: 10}}, {{'Attribute.Will'|l}} {{data.attributeWill|default: 10}}.\n{{data.attributeCustom}}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Common.Perception'|l}}** {{data.perception}}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Common.Defense'|l}}** {{data.defense}}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Common.Health'|l}}** {{data.health}}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Common.HealingRate'|l}}** {{data.healingRate}}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Common.Size'|l}}** {{data.size|map: 'Size'}}, **{{'Common.Speed'|l}}** {{data.speed}}, **{{'Common.Power'|l}}** {{data.power|default: 0}}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Common.Damage'|l}}** {{data.damage|default: 0}}, **{{'Common.Insanity'|l}}** {{data.insanity|default: 0}}, **{{'Common.Corruption'|l}}** {{data.corruption|default: 0}}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Language.Profession'|l}}.** {{data.LangProf}}",
+          "visibleIf": "{% if data.LangProf %}true{% endif %}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Common.Immune'|l}} :** {{data.immune|map: 'Affliction'|l|lowercase}}",
+          "visibleIf": "{% if data.immune %}true{% endif %}"
+        },
+        {
+          "type": "list",
+          "attribute": "data.talent",
+          "views": [
+            {
+              "type": "text",
+              "style": "sotdlbody",
+              "value": "{% if name %}**{{name}}**{% endif %} {{text}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vStack",
+      "views": [
+        {
+          "type": "text",
+          "style": "ancestrySection",
+          "value": "**{{'Level4.Expert'|l|uppercase}}**",
+          "padding": [
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 1.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "vStack",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Level4.Increase'|l}} :** {{data.level4Increase}}",
+          "visibleIf": "{% if data.level4Increase %}true{% endif %}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "{{data.level4Talent}}"
+        }
+      ]
+    }
+  ]
+}

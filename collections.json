@@ -1,26 +1,4 @@
 {
-    "Armor": [
-      "Clothing",
-      "Soft Leather",
-      "Hard Leather",
-      "Brigandine",
-      "Mail",
-      "Scale",
-      "Plate and Mail",
-      "Full PLate",
-      "Small shield",
-      "Large shield"
-    ],
-    "CreatureDifficulty": [
-      "1",
-      "5",
-      "10",
-      "25",
-      "50",
-      "100",
-      "250",
-      "500"
-    ],
     "Affliction": [
       "Asleep",
       "Blinded",
@@ -42,43 +20,122 @@
       "Surprised",
       "Unconscious"
     ],
+    "Ammunition": [
+      "Arrow",
+      "Bolt",
+      "Bullet & Black Powder",
+      "Dart",
+      "Stone"
+    ],
+    "Availability": [
+      "Common",
+      "Uncommon",
+      "Rare",
+      "Exotic"
+    ],
+    "PathCategory": [
+      "Faith",
+      "Power",
+      "Trickery",
+      "War"
+    ],
+    "PathMCategory": [
+      "Magic",
+      "Skill"
+    ],
+    "Coinage": [
+      "cp",
+      "ss",
+      "gc"
+    ],
+    "CreatureDifficulty": [
+      "1",
+      "5",
+      "10",
+      "25",
+      "50",
+      "100",
+      "250",
+      "500"
+    ],
+    "DurationUnit": [
+      "round",
+      "minute",
+      "hour",
+      "day"
+    ],
+    "ItemCategory": [
+      "Armor",
+      "Weapon",
+      "AdventuringGear"
+    ],
+    "ItemArmorType": [
+      "clothing",
+      "lightArmor",
+      "mediumArmor",
+      "heavyArmor"
+    ],
+    "ItemWeaponType": [
+      "BasicMelee",
+      "MilitaryMelee",
+      "SwiftMelee",
+      "HeavyMelee",
+      "Ranged",
+      "Shield",
+      "Ammunition"
+    ],
+    "ItemAdventuringGear": [
+      "PersonalGear",
+      "Accessory",
+      "Tool",
+      "Food",
+      "AnimalGear",
+      "Hireling",
+      "Potion",
+      "Incantation"
+    ],
+ 
+    "PathType": [
+      "Novice",
+      "Expert",
+      "Master"
+    ],
+    "Rank": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
     "Sense": [
-      "shadowsight",
-      "darksight",
-      "sightless",
-      "truesight"
+      "Shadowsight",
+      "Darksight",
+      "Sightless",
+      "Truesight"
     ],
     "Size": [
       "1/4",
       "1/2",
       "1",
       "2",
-      "3"
-    ],
-    "SpellDurationUnit": [
-      "round",
-      "minute",
-      "hour",
-      "day"
+      "3",
+      "4"
     ],
     "SpellDurationSpecific": [
       "Concentration",
       "EffectDescription"
     ],
-    "SpellRank": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10
+    "SpellType": [
+      "Attack",
+      "Utility"
     ],
-    "SpellTradition": [
+    "Tradition": [
       "Air",
       "Alteration",
       "Arcana",
@@ -111,8 +168,20 @@
       "Transformation",
       "Water"
     ],
-    "SpellType": [
-      "Attack",
-      "Utility"
+    "WeaponHand": [
+      "One",
+      "Two",
+      "Off"
+    ],
+    "WeaponProperty": [
+      "Cumbersone",
+      "Finesse",
+      "Misfire",
+      "Short range",
+      "Medium range",
+      "Long range",
+      "Reload",
+      "Size 1",
+      "Thrown"
     ]
   }

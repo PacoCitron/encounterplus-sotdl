@@ -1,0 +1,98 @@
+{
+  "title": "Character",
+  "tabs": [
+    {
+      "title": "Character.Main",
+      "icon": "person",
+      "sections": [
+        {
+          "type": "group",
+          "fields": [
+            {
+              "type": "text",
+              "title": "Level",
+              "attribute": "data.level"
+            }
+          ]
+        },
+        {
+          "title": "Attributes",
+          "type": "group",
+          "fields": [
+            {
+              "type": "hStack",
+              "fields": [
+                {
+                  "title": "Attribute.Strength",
+                  "type": "number",
+                  "attribute": "data.attributeStrength",
+                  "attributeType": "AttributeStrength",
+                  "placeholder": "10",
+                  "alignment": "top"
+                },
+                {
+                  "title": "Attribute.Agility",
+                  "type": "number",
+                  "attribute": "data.attributeAgility",
+                  "attributeType": "AttributeAgility",
+                  "placeholder": "10",
+                  "alignment": "top"
+                },
+                {
+                  "title": "Attribute.Intellect",
+                  "type": "number",
+                  "attribute": "data.attributeIntellect",
+                  "attributeType": "AttributeIntellect",
+                  "placeholder": "10",
+                  "alignment": "top"
+                },
+                {
+                  "title": "Attribute.Will",
+                  "type": "number",
+                  "attribute": "data.attributeWill",
+                  "attributeType": "AttributeWill",
+                  "placeholder": "10",
+                  "alignment": "top"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Entity.Ancestry",
+          "type": "group",
+          "fields": [
+            {
+              "type": "form",
+              "title": "{{data.ancestry.name}}",
+              "attribute": "data.ancestry",
+              "attributeType": "Ancestry",
+              "custom": {
+                "map": {
+                  "Strength": "data.attributeStrength",
+                  "Speed": "data.speed"
+                }
+              },
+              "form": {
+                "title": "Entity.Ancestry",
+                "partial": "character-ancestry"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Path",
+          "type": "list",
+          "attribute": "data.paths",
+          "attributeType": "Path",
+          "listItemDetail": "{{data.pathType}}",
+          "form": {
+            "title": "Path",
+            "partial": "character-path"
+          }
+        }
+
+      ]
+    }
+  ]
+}

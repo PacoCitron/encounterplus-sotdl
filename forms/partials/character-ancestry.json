@@ -1,0 +1,187 @@
+{
+  "sections": [
+    {
+      "title": "Attributes",
+      "type": "group",
+      "fields": [
+        {
+          "type": "hStack",
+          "fields": [
+            {
+              "title": "Attribute.Strength",
+              "type": "number",
+              "attribute": "data.attributeStrength",
+              "attributeType": "AttributeStrength",
+              "placeholder": "10",
+              "alignment": "top"
+            },
+            {
+              "title": "Attribute.Agility",
+              "type": "number",
+              "attribute": "data.attributeAgility",
+              "attributeType": "AttributeAgility",
+              "placeholder": "10",
+              "alignment": "top"
+            },
+            {
+              "title": "Attribute.Intellect",
+              "type": "number",
+              "attribute": "data.attributeIntellect",
+              "attributeType": "AttributeIntellect",
+              "placeholder": "10",
+              "alignment": "top"
+            },
+            {
+              "title": "Attribute.Will",
+              "type": "number",
+              "attribute": "data.attributeWill",
+              "attributeType": "AttributeWill",
+              "placeholder": "10",
+              "alignment": "top"
+            }
+          ]
+        },
+        {
+          "title": "Attribute.Mod",
+          "type": "toggle",
+          "attribute": "data.attributeDetail",
+          "attributeType": "AttributeDetail"
+        },
+        {
+          "title": "Attribute.Custom",
+          "type": "textArea",
+          "attribute": "data.attributeCustom",
+          "attributeType": "AttributeCustom",
+          "visibleIf": "{{data.attributeDetail}}"
+        }
+      ]
+    },
+    {
+      "title": "Characteristics",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Common.Perception",
+          "type": "text",
+          "attribute": "data.perception",
+          "attributeType": "Perception"
+        },
+        {
+          "title": "Common.Defense",
+          "type": "text",
+          "attribute": "data.defense",
+          "attributeType": "Defense"
+        },
+        {
+          "title": "Common.Health",
+          "type": "text",
+          "attribute": "data.health",
+          "attributeType": "Health"
+        },
+        {
+          "title": "Common.Damage",
+          "type": "number",
+          "attribute": "data.damage",
+          "attributeType": "Damage",
+          "placeholder": "0"
+        },
+        {
+          "title": "Common.HealingRate",
+          "type": "textArea",
+          "attribute": "data.healingRate",
+          "attributeType": "HealingRate"
+        },
+        {
+          "title": "Common.Size",
+          "type": "multiPicker",
+          "attribute": "data.size",
+          "attributeType": "Size"
+        },
+        {
+          "title": "Common.Speed",
+          "type": "number",
+          "attribute": "data.speed",
+          "attributeType": "Speed"
+        },
+        {
+          "title": "Common.Power",
+          "type": "number",
+          "attribute": "data.power",
+          "attributeType": "Power",
+          "placeholder": "0"
+        },
+        {
+          "title": "Common.Insanity",
+          "type": "number",
+          "attribute": "data.insanity",
+          "attributeType": "Insanity",
+          "placeholder": "0"
+        },
+        {
+          "title": "Common.Corruption",
+          "type": "number",
+          "attribute": "data.corruption",
+          "attributeType": "Corruption",
+          "placeholder": "0"
+        },
+        {
+          "title": "Common.Immune",
+          "type": "multiPicker",
+          "attribute": "data.immune",
+          "attributeType": "Affliction"
+        }
+      ]
+    },
+    {
+      "title": "Language.Profession",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Language.Profession",
+          "type": "textArea",
+          "attribute": "data.LangProf",
+          "attributeType": "LanguageProfession"
+        }
+      ]
+    },
+    {
+      "title": "Common.Talent",
+      "type": "list",
+      "attribute": "data.talent",
+      "form": {
+        "title": "Common.Talent",
+        "partial": "generic-feature"
+      }
+    },
+    {
+      "title": "Level4.Expert",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Level4.Increase",
+          "type": "text",
+          "attribute": "data.level4Increase",
+          "attributeType": "Level4Increase"
+        },
+        {
+          "title": "Level4.Talent",
+          "type": "textArea",
+          "attribute": "data.level4Talent",
+          "attributeType": "Level4Talent"
+        }
+      ]
+    },
+    {
+        "type": "group",
+        "title": "Reference",
+        "fields": [
+          {
+            "title": "Reference",
+            "type": "reference",
+            "attribute": "reference",
+            "attributeType": "Ancestry"
+          }
+        ]
+      }
+  ]
+}

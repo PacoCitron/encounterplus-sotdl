@@ -1,25 +1,21 @@
 {
   "debug": false,
-  "spacing": 4,
+  "spacing": 0,
   "padding": [
     20
   ],
-  "footer": true,
-  "images": true,
-  "type": "vStack",
-  "width": 0,
   "views": [
     {
       "type": "hStack",
-      "width": 0,
       "views": [
         {
-          "style": "spellTitle",
+          "type": "text",
+          "style": "entityTitle",
           "value": "**{{name|uppercase}}**"
         },
         {
-          "style": "spellSubtitle",
-          "value": "**{{data.spellTradition|map: 'SpellTradition'|uppercase}} {{data.spellType|map: 'SpellType'|uppercase}} {{data.spellRank|uppercase}}**",
+          "style": "entitySubtitle",
+          "value": "**{{data.tradition|map: 'Tradition'|uppercase}} • {{data.spellType|map: 'SpellType'|uppercase}} {{data.rank|uppercase}}**",
           "alignment": "trailing"
         }
       ]
@@ -27,73 +23,77 @@
     {
       "type": "divider",
       "bgColor": "#000000",
-      "height": 2,
+      "height": 2.5,
       "padding": [
         0
-      ]
-    },
-    {
-      "type": "list",
-      "attribute": "data.spellOptions",
-      "views": [
-        {
-          "type": "text",
-          "style": "spellText",
-          "value": "{% if name %}**{{name}}.**{% endif %} {{text}}"
-        }
-      ]
-    },
-    {
-      "style": "spellText",
-      "value": "{% if data.spellDuration %} **{{'Spell.Duration'|l}}.** {% include 'spell-duration.md' data %}{% endif %}"
-    },
-    {
-      "type": "divider",
-      "bgColor": "#9B0619",
-      "height": 1.5,
-      "padding": [
-        0
-      ]
-    },
-    {
-      "style": "spellText",
-      "padding": [
-        4,
-        0
-      ],
-      "type": "text",
-      "value": "{{descr}}"
-    },
-    {
-      "type": "list",
-      "attribute": "data.specialEffects",
-      "views": [
-        {
-          "type": "text",
-          "style": "spellText",
-          "value": "{% if name %}**{{name}}.**{% endif %} {{text}}"
-        }
       ]
     },
     {
       "type": "spacer"
     },
     {
-      "type": "flow",
-      "alignment": "trailing",
-      "width": 0,
+      "type": "vStack",
+      "padding": [
+        8
+      ],
       "views": [
         {
+          "type": "list",
+          "attribute": "data.spellOption",
+          "views": [
+            {
+              "type": "text",
+              "style": "sotdlbody",
+              "value": "{% if name %}**{{name}}**{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
           "type": "text",
-          "style": "sourceText",
-          "value": "*{{footer}}*"
+          "style": "sotdlbody",
+          "value": "{% if data.spellDuration or data.specificDuration %}**{{'Common.Duration'|l}}.**{% endif %} {% include 'spell-duration.md' data %}",
+          "visibleIf": "{% if data.spellDuration or data.specificDuration == true %}true{% endif %}"
         }
       ]
     },
     {
-      "type": "image",
-      "value": "{{image}}",
-      "link": "{{image}}"
+      "type": "divider",
+      "bgColor": "#9B0619",
+      "height": 1.5,
+      "visibleIf": "{% if data.spellOption or data.spellDuration == true %}true{% endif %}",
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "vStack",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "{{descr}}"
+        },
+        {
+          "type": "list",
+          "attribute": "data.spellEffect",
+          "views": [
+            {
+              "type": "text",
+              "style": "sotdlbody",
+              "value": "{% if name %}**{{name}}**{% endif %} {{text}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "spacer"
     }
   ]
 }

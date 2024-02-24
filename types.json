@@ -1,16 +1,4 @@
 {
-  "Armor": {
-    "Clothing": "Armor.Clothing",
-    "Soft Leather": "Armor.SoftLeather",
-    "Hard Leather": "Armor.HardLeather",
-    "Brigandine": "Armor.Brigandine",
-    "Mail": "Armor.Mail",
-    "Scale": "Armor.Scale",
-    "Plate and Mail": "Armor.PlateAndMail",
-    "Full PLate": "Armor.FullPLate",
-    "Small shield": "Armor.SmallShield",
-    "Large shield": "Armor.LargeShield"
-  },
   "Affliction": {
     "Asleep": "Affliction.Asleep",
     "Blinded": "Affliction.Blinded",
@@ -32,30 +20,98 @@
     "Surprised": "Affliction.Surprised",
     "Unconscious": "Affliction.Unconscious"
   },
-  "Sense": {
-    "shadowsight": "Sense.Shadowsight",
-    "darksight": "Sense.Darksight",
-    "sightless": "Sense.Sightless",
-    "truesight": "Sense.Truesight"
+  "Ammunition": {
+    "Arrow": "Ammunition.Arrow",
+    "Bolt": "Ammunition.Bolt",
+    "Bullet & Black Powder": "Ammunition.BulletPowder",
+    "Dart": "Ammunition.Dart",
+    "Stone": "Ammunition.Stone"
   },
-  "Size": {
-    "1": "Size.1",
-    "2": "Size.2",
-    "3": "Size.3orlarger",
-    "1/4": "Size.1/4orsmaller",
-    "1/2": "Size.1/2"
+  "Availability": {
+    "Common": "Availability.Common",
+    "Uncommon": "Availability.Uncommon",
+    "Rare": "Availability.Rare",
+    "Exotic": "Availability.Exotic"
   },
-  "SpellDurationUnit": {
+  "Coinage": {
+    "cp": "Coinage.Copper",
+    "ss": "Coinage.Silver",
+    "gc": "Coinage.Gold"
+  },
+  "DurationUnit": {
     "round": "Unit.Round",
     "minute": "Unit.Minute",
     "hour": "Unit.Hour",
     "day": "Unit.Day"
   },
-  "SpellDurationSpecific": {
+  "ItemAdventuringGear": {
+    "PersonalGear": "Gear.Personal",
+    "Accessory": "Gear.Accessory",
+    "Tool": "Gear.Tool",
+    "Food": "Gear.Food",
+    "AnimalGear": "Gear.Animal",
+    "Hireling": "Gear.Hireling",
+    "Potion": "Gear.Potion",
+    "Incantation": "Gear.Incantation"
+  },
+  "ItemArmorType": {
+    "clothing": "Armor.Clothing",
+    "lightArmor": "Armor.Light",
+    "mediumArmor": "Armor.Medium",
+    "heavyArmor": "Armor.Heavy"
+  },
+  "ItemCategory": {
+    "Armor": "Item.Armor",
+    "Weapon": "Item.Weapon",
+    "AdventuringGear": "Item.AdventuringGear"
+  },
+  "ItemWeaponType": {
+    "BasicMelee": "Weapon.Basic",
+    "MilitaryMelee": "Weapon.Military",
+    "SwiftMelee": "Wepaon.Swift",
+    "HeavyMelee": "Weapon.Heavy",
+    "Ranged": "Weapon.Ranged",
+    "Shield": "Weapon.Shield",
+    "Ammunition": "Weapon.Ammunition"
+  },
+  "PathCategory": {
+    "Faith": "Path.Faith",
+    "Power": "Path.Power",
+    "Trickery": "Path.Trickery",
+    "War": "Path.War"
+  }, 
+  "PathMCategory": {
+    "Magic": "Path.Magic",
+    "Skill": "Path.Skill"
+  },
+  "PathType": {
+    "Novice": "Path.Novice",
+    "Expert": "Path.Expert",
+    "Master": "Path.Master"
+  }, 
+  "Sense": {
+    "Shadowsight": "Sense.Shadowsight",
+    "Darksight": "Sense.Darksight",
+    "Sightless": "Sense.Sightless",
+    "Truesight": "Sense.Truesight"
+  },
+  "Size": {
+    "1": "Size.1",
+    "2": "Size.2",
+    "3": "Size.3",
+    "4": "Size.larger",
+    "1/4": "Size.smaller",
+    "1/2": "Size.1/2"
+  },
+  "SpellSpecificDuration": {
     "Concentration": "Spell.Concentration",
     "EffectDescription": "Spell.EffectDescription"
   },
-  "SpellTradition": {
+  "SpellType": {
+    "Attack": "Spell.TypeAttack",
+    "Utility": "Spell.TypeUtility"
+  },
+  "Tradition": {
     "Air": "Tradition.Air",
     "Alteration": "Tradition.Alteration",
     "Arcana": "Tradition.Arcana",
@@ -88,8 +144,21 @@
     "Transformation": "Tradition.Transformation",
     "Water": "Tradition.Water"
   },
-  "SpellType": {
-    "Attack": "Spell.TypeAttack",
-    "Utility": "Spell.TypeUtility"
+  "WeaponHand": {
+    "One": "Hand.One",
+    "Two": "Hand.Two",
+    "Off": "Hand.Off"
+  },
+  "WeaponProperty": {
+    "Cumbersone": "Property.Cumbersone",
+    "Finesse": "Property.Finesse",
+    "Misfire": "Property.Misfire",
+    "Short range": "Property.Short",
+    "Medium range": "Property.Medium",
+    "Long range": "Property.Long",
+    "Reload": "Property.Reload",
+    "Size 1": "Property.Size1",
+    "Uses ammunition": "Property.Ammunition",
+    "Thrown": "Property.Thrown"
   }
 }

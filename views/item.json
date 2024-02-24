@@ -1,0 +1,130 @@
+{
+  "debug": false,
+  "spacing": 0,
+  "padding": [
+    20
+  ],
+  "views": [
+    {
+      "type": "hStack",
+      "views": [
+        {
+          "type": "text",
+          "style": "entityTitle",
+          "value": "**{{name|uppercase}}**"
+        },
+        {
+          "style": "entitySubtitle",
+          "value": "**{{data.itemCategory|map: 'ItemCategory'|uppercase}} • {{data.availability|map: 'Availability'|uppercase}}**",
+          "alignment": "trailing"
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 2.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "vStack",
+      "visibleIf": "{% if data.itemCategory == 'Armor' %}true{% endif %}",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Common.Price'|l}} :** {% include 'price-detail.md' data %}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Item.ArmorType'|l}} :** {{data.armorType|map: 'ItemArmorType'|lowercase}} {% if data.armorCondition %}{{data.armorCondition|brackets}}{% endif %}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Common.Defense'|l}} :** {{data.armorDefense}}"
+        }
+      ]
+    },
+    {
+      "type": "vStack",
+      "visibleIf": "{% if data.itemCategory == 'Weapon' %}true{% endif %}",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Common.Price'|l}} :** {% include 'price-detail.md' data %}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Item.WeaponType'|l}} :** {{data.weaponType|map: 'ItemWeaponType'|lowercase}} {% if data.ammunitionType %}{{data.ammunitionType|map: 'Ammunition'|lowercase|brackets}}{% endif %}, **{{'Weapon.Hand'|l}} :** {{data.weaponHand|map: 'WeaponHand'|lowercase}}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Common.Damage'|l}} :** {{data.weaponDamage}}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Weapon.Property'|l}} :** {% include 'weapon-property.md' data %}"
+        }
+      ]
+    },
+    {
+      "type": "vStack",
+      "visibleIf": "{% if data.itemCategory == 'AdventuringGear' %}true{% endif %}",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Common.Price'|l}}** {% include 'price-detail.md' data %}"
+        },
+        {
+          "type": "text",
+          "style": "sotdlbody",
+          "value": "**{{'Item.GearType'|l}} :** {{data.gearType|map: 'ItemAdventuringGear'|lowercase}}."
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#9B0619",
+      "height": 1.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}"
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "image",
+      "value": "{{image}}",
+      "link": "{{image}}"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{{price}} {{coinage|map: 'Coinage'|l}}

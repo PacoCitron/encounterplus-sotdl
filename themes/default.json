@@ -5,11 +5,57 @@
   "dividerColor": "#cccccc",
   "bgColor": "#f5f5f5",
   "bgImage": "/images/sotdl_paper.png",
+
   "textStyles": {
     "body": {
-      "font": "NotoSans",
+      "font": "LiberationSerif-Regular",
+      "size": 17
+    },
+    "sotdlbody": {
+      "font": "Arial",
       "size": 15
     },
+    "sourceText": {
+      "font": "LiberationSerif-Regular",
+      "color": "#000000",
+      "caps": true,
+      "size": 12
+    },
+    "entityTitle": {
+      "font": "Athelas-Regular",
+      "size": 25,
+      "color":"#9B0619"
+    },
+    "entitySubtitle": {
+      "font": "Athelas-Regular",
+      "size": 15,
+      "color":"#9B0619",
+      "alignment": "center"
+    },
+    "entityTitleW": {
+      "font": "Athelas-Regular",
+      "size": 25,
+      "color":"#FFFFFF"
+    },
+    "entitySubtitleW": {
+      "font": "Athelas-Regular",
+      "size": 15,
+      "color":"#FFFFFF"
+    },
+    "creatureSection": {
+      "font": "Athelas-Regular",
+      "color": "#000000",
+      "size": 15
+    },
+    "ancestrySection": {
+      "font": "Athelas-Regular",
+      "size": 17,
+      "color":"#9B0619",
+      "alignment": "center"
+    },
+    
+
+
     "label": {
       "font": "NotoSans",
       "color": "#58180D",
@@ -19,57 +65,7 @@
       "font": "HoeflerText-Regular",
       "color": "#58180D",
       "caps": true,
-      "size": 30
-    },
-    "spellTitle": {
-      "font": "Athelas",
-      "color": "#9B0619",
-      "caps": true,
-      "size": 20
-    },
-    "creatureTitle": {
-      "font": "Athelas",
-      "color": "#FFFFFF",
-      "caps": true,
-      "size": 20
-    },
-    "spellSubtitle": {
-      "font": "Athelas",
-      "color": "#9B0619",
-      "caps": true,
-      "size": 15
-    },
-    "creatureSubtitle": {
-      "font": "Athelas",
-      "color": "#FFFFFF",
-      "caps": true,
-      "size": 15
-    },
-    "creatureSection": {
-      "font": "Athelas",
-      "color": "#000000",
-      "caps": true,
-      "size": 15
-    },
-    "spellText": {
-      "font": "Arial",
-      "color": "#000000",
-      "caps": true,
-      "size": 15,
-      "lineSpacing": 0.4,
-    },
-    "creatureText": {
-      "font": "Arial",
-      "color": "#000000",
-      "caps": true,
-      "size": 15,
-      "lineSpacing": 0.4,
-    },
-    "sourceText": {
-      "font": "Arial",
-      "color": "#000000",
-      "caps": true,
-      "size": 12,
+      "size": 28
     },
     "subtitle": {
       "font": "NotoSans-Italic",
@@ -84,7 +80,7 @@
       "font": "HoeflerText-Regular",
       "color": "#58180D",
       "caps": true,
-      "size": 28
+      "size": 25
     },
     "heading2": {
       "font": "HoeflerText-Regular",

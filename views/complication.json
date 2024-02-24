@@ -1,0 +1,48 @@
+{
+  "debug": false,
+  "spacing": 0,
+  "padding": [
+    20
+  ],
+  "views": [
+    {
+      "type": "text",
+      "style": "entityTitle",
+      "value": "**{{name|uppercase}}**"
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 2.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}"
+    },
+    {
+      "type": "vStack",
+      "padding": [
+        8
+      ],
+      "views": [
+        {
+          "type": "list",
+          "attribute": "data.trait",
+          "views": [
+            {
+              "type": "text",
+              "style": "sotdlbody",
+              "value": "{% if name %}**{{name}}**{% endif %} {{text}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

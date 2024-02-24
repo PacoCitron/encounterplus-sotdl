@@ -1,0 +1,1 @@
+{% if reachValue -%}{{'Weapon.Reach'|l|lowercase}} +{{reachValue}},{% endif %}{% if defensiveValue -%}{{'Weapon.Defensive'|l|lowercase}} +{{defensiveValue}}{% endif %}{% if defensiveValue and weaponProperty -%},{% endif %} {{weaponProperty|map: 'WeaponProperty'|l|lowercase}}

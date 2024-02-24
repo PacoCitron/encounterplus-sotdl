@@ -1,0 +1,140 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "title": "Path.Type",
+      "fields": [
+        {
+          "title": "Path.Type", 
+          "type": "picker",
+          "attribute": "data.pathType",
+          "attributeType": "PathType"
+        },
+        {
+          "title": "Path.Category",
+          "type": "multiPicker",
+          "attribute": "data.category",
+          "attributeType": "PathCategory",
+          "visibleIf": "{{data.pathType == 'Expert'}}"
+        },
+        {
+          "title": "Path.MCategory",
+          "type": "multiPicker",
+          "attribute": "data.mCategory",
+          "attributeType": "PathMCategory",
+          "visibleIf": "{{data.pathType == 'Master'}}"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Path.Level1",
+      "visibleIf": "{{data.pathType == 'Novice'}}",
+      "fields": [
+        {
+          "type": "form",
+          "title": "Path.Level1",
+          "attribute": "data.level1",
+          "attributeType": "Level1",
+          "form": {
+            "title": "Path.Level1",
+            "partial": "path-level"
+          }
+        },
+        {
+          "type": "form",
+          "title": "Path.Level2",
+          "attribute": "data.level2",
+          "attributeType": "Level2",
+          "form": {
+            "title": "Path.Level2",
+            "partial": "path-nextlevels"
+          }
+        },
+        {
+          "type": "form",
+          "title": "Path.Level5",
+          "attribute": "data.level5",
+          "attributeType": "Level5",
+          "form": {
+            "title": "Path.Level5",
+            "partial": "path-nextlevels"
+          }
+        },
+        {
+          "type": "form",
+          "title": "Path.Level8",
+          "attribute": "data.level8",
+          "attributeType": "Level8",
+          "form": {
+            "title": "Path.Level8",
+            "partial": "path-nextlevels"
+          }
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visibleIf": "{{data.pathType == 'Expert'}}",
+      "fields": [
+        {
+          "type": "form",
+          "title": "{{'Path.Level3'}}",
+          "attribute": "data.level3",
+          "attributeType": "Level3",
+          "form": {
+            "title": "Path.Level3",
+            "partial": "path-level"
+          }
+        },
+        {
+          "type": "form",
+          "title": "{{'Path.Level6'}}",
+          "attribute": "data.level6",
+          "attributeType": "Level6",
+          "form": {
+            "title": "Path.Level6",
+            "partial": "path-nextlevels"
+          }
+        },
+        {
+          "type": "form",
+          "title": "{{'Path.Level9'}}",
+          "attribute": "data.level9",
+          "attributeType": "Level9",
+          "form": {
+            "title": "Path.Level9",
+            "partial": "path-nextlevels"
+          }
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visibleIf": "{{data.pathType == 'Master'}}",
+      "fields": [
+        {
+          "type": "form",
+          "title": "{{'Path.Level7'}}",
+          "attribute": "data.level7",
+          "attributeType": "Level7",
+          "form": {
+            "title": "Path.Level7",
+            "partial": "path-level"
+          }
+        },
+        {
+          "type": "form",
+          "title": "{{'Path.Level10'}}",
+          "attribute": "data.level10",
+          "attributeType": "Level10",
+          "form": {
+            "title": "Path.Level10",
+            "partial": "path-nextlevels"
+          }
+        }
+      ]
+    }
+  ]
+}
+

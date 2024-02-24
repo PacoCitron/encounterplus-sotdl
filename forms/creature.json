@@ -2,8 +2,8 @@
   "title": "Creature",
   "sections": [
     {
+      "title": "BacicInformations",
       "type": "group",
-      "title": "Creature.BasicInformation",
       "fields": [
         {
           "title": "Creature.Descriptor",
@@ -27,7 +27,7 @@
         },
         {
           "title": "Common.Size",
-          "type": "picker",
+          "type": "multiPicker",
           "attribute": "data.size",
           "attributeType": "Size"
         },
@@ -40,18 +40,13 @@
       ]
     },
     {
-      "title": "Creature.Characteristics",
+      "title": "Characteristics",
       "type": "group",
       "fields": [
         {
-          "title": "Creature.Perception",
+          "title": "Common.Perception",
           "type": "number",
-          "attribute": "data.creaturePerception"
-        },
-        {
-          "title": "Creature.MODPerception",
-          "type": "number",
-          "attribute": "data.modCreaturePerception"
+          "attribute": "data.perception"
         },
         {
           "title": "Common.Sense",
@@ -65,27 +60,24 @@
           "attribute": "data.defense"
         },
         {
-          "title": "Common.Armor",
-          "type": "picker",
-          "attribute": "data.armor",
-          "attributeType": "Armor"
+          "title": "Common.ArmorDetail",
+          "type": "text",
+          "attribute": "data.armorDetail"
         },
         {
           "title": "Common.Health",
           "type": "number",
-          "attribute": "data.healt"
+          "attribute": "data.hp"
         },
         {
           "title": "Common.Insanity",
           "type": "number",
-          "attribute": "data.insanity",
-          "placeholder": "Default"
+          "attribute": "data.insanity"
         },
         {
           "title": "Common.Corruption",
           "type": "number",
-          "attribute": "data.corruption",
-          "placeholder": "Default"
+          "attribute": "data.corruption"
         },
         {
           "title": "Common.Speed",
@@ -93,9 +85,9 @@
           "attribute": "data.speed"
         },
         {
-          "title": "Movement.Special",
+          "title": "Common.Movement",
           "type": "text",
-          "attribute": "data.specialMovement"
+          "attribute": "data.movement"
         },
         {
           "title": "Common.Immune",
@@ -104,14 +96,14 @@
           "attributeType": "Affliction"
         },
         {
-          "title": "Creature.MagicPower",
+          "title": "Common.Power",
           "type": "number",
-          "attribute": "data.magicPower"
+          "attribute": "data.power"
         }
       ]
     },
     {
-      "title": "Creature.Attributes",
+      "title": "Attributes",
       "type": "group",
       "fields": [
         {
@@ -142,35 +134,6 @@
               "attribute": "data.attributeWill"
             }
           ]
-        },
-        {
-          "type": "hStack",
-          "fields": [
-            {
-              "title": "Attribute.STRModifier",
-              "type": "number",
-              "alignment": "top",
-              "attribute": "data.strModifier"
-            },
-            {
-              "title": "Attribute.AGIModifier",
-              "type": "number",
-              "alignment": "top",
-              "attribute": "data.agiModifier"
-            },
-            {
-              "title": "Attribute.INTModifier",
-              "type": "number",
-              "alignment": "top",
-              "attribute": "data.intModifier"
-            },
-            {
-              "title": "Attribute.WILModifier",
-              "type": "number",
-              "alignment": "top",
-              "attribute": "data.wilModifier"
-            }
-          ]
         }
       ]
     },
@@ -184,16 +147,16 @@
       }
     },
     {
-      "title": "Attack.Options",
+      "title": "Attack.Option",
       "type": "list",
       "attribute": "data.attackOption",
       "form": {
-        "title": "Attack.Options",
+        "title": "Attack.Option",
         "partial": "generic-feature"
       }
     },
     {
-      "title": "Attacks.Special",
+      "title": "Attack.Special",
       "type": "list",
       "attribute": "data.attackSpecial",
       "form": {
@@ -211,11 +174,11 @@
       }
     },
     {
-      "title": "Common.Magic",
+      "title": "Spell.List",
       "type": "list",
-      "attribute": "data.spellTraditionList",
+      "attribute": "data.spells",
       "form": {
-        "title": "Creature.Magic.Liste",
+        "title": "Spell",
         "partial": "generic-feature"
       }
     },

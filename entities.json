@@ -1,18 +1,63 @@
 [
   {
+    "name": "Character",
+    "label": "character",
+    "collection": {
+      "label": "characters"
+    },
+    "loadable": true
+  },
+  {
+    "name": "Ancestry",
+    "label": "ancestry",
+    "collection": {
+      "label": "ancestries"
+    }
+  },
+  {
+    "name": "Path",
+    "label": "path",
+    "collection": {
+      "label": "paths"
+    }
+  },
+  {
+    "name": "Complication",
+    "label": "complication",
+    "collection": {
+      "label": "complications"
+    }
+  },
+  {
     "name": "Creature",
     "label": "creature",
     "collection": {
       "label": "creatures"
     },
-    "lodable": true
-  },
+    "loadable": true
+  }, 
   {
     "name": "Spell",
     "label": "spell",
     "collection": {
       "label": "spells"
+    }
+  },
+  {
+    "name": "Item",
+    "label": "item",
+    "collection": {
+      "label": "items"
     },
-    "loadable": false
+    "loadable": true,
+    "role": "neutral"
+  },
+  {
+    "name": "Table",
+    "label": "table",
+    "collection": {
+      "label": "tables"
+    }
   }
+
 ]

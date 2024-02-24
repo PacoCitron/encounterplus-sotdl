@@ -11,15 +11,9 @@
           "placeholder": "Default",
           "attribute": "language",
           "attributeType": "SystemLanguage"
-        },
-        {
-          "type": "picker",
-          "title": "Measurement",
-          "placeholder": "Default",
-          "attribute": "measurement",
-          "attributeType": "MeasurementSystem"
-        },
+        }
       ]
-    },
+    }
   ]
 }
+

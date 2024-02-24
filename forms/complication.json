@@ -1,0 +1,14 @@
+{
+    "title": "Complication",
+    "sections": [ 
+      {
+        "title": "Common.Trait",
+        "type": "list",
+        "attribute": "data.trait",
+        "form": {
+          "title": "Common.Trait",
+          "partial": "generic-feature"
+        }
+      }
+    ]
+  }

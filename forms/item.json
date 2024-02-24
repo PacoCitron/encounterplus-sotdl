@@ -1,0 +1,166 @@
+{
+  "title": "Item",
+  "sections": [
+    {
+      "title": "BacicInformations", 
+      "type": "group",
+      "fields": [
+        {
+          "title": "Common.Price",
+          "type": "form",
+          "text": "{% include 'price-detail.md' data %}",
+          "form": {
+            "title": "Common.Price",
+            "sections": [
+              {
+                "type": "group",
+                "fields": [
+                  {
+                    "title": "Common.Price",
+                    "type": "number",
+                    "attribute": "data.price"
+                  },
+                  {
+                    "title": "Common.Coinage",
+                    "type": "picker",
+                    "attribute": "data.coinage",
+                    "attributeType": "Coinage"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Common.Availability",
+          "type": "picker",
+          "attribute": "data.availability",
+          "attributeType": "Availability"
+        },
+        {
+          "title": "Common.ItemCategory",
+          "type": "picker",
+          "attribute": "data.itemCategory",
+          "attributeType": "ItemCategory"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visibleIf": "{{data.itemCategory == 'Armor'}}",
+      "fields": [
+        {
+          "title": "Item.ArmorType",
+          "type": "picker",
+          "attribute": "data.armorType",
+          "attributeType": "ItemArmorType"
+        },
+        {
+          "title": "Armor.Condition",
+          "type": "text",
+          "attribute": "data.armorCondition"
+        },
+        {
+          "title": "Common.Defense",
+          "type": "text",
+          "attribute": "data.armorDefense"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visibleIf": "{{data.itemCategory == 'Weapon'}}",
+      "fields": [
+        {
+          "title": "Item.WeaponType",
+          "type": "picker",
+          "attribute": "data.weaponType",
+          "attributeType": "ItemWeaponType"
+        },
+        {
+          "title": "Weapon.Condition",
+          "type": "text",
+          "attribute": "data.weaponCondition"
+        },
+        {
+          "title": "Common.Damage",
+          "type": "text",
+          "attribute": "data.weaponDamage"
+        },
+        {
+          "title": "Weapon.Hand",
+          "type": "picker",
+          "attribute": "data.weaponHand",
+          "attributeType": "WeaponHand"
+        },
+        {
+          "title": "Weapon.Property",
+          "type": "form",
+          "text": "{% include 'weapon-property.md' data %}",
+          "form": {
+            "title": "Weapon.Property", 
+            "sections": [
+              {
+                "type": "group",
+                "fields": [
+                  {
+                    "title": "Weapon.Reach",
+                    "type": "toggle",
+                    "attribute": "data.weaponReach"
+                  },
+                  {
+                    "title": "Weapon.ReachValue",
+                    "type": "number",
+                    "attribute": "data.reachValue",
+                    "visibleIf": "{{data.weaponReach}}"
+                  },
+                  {
+                    "title": "Weapon.Defensive",
+                    "type": "toggle",
+                    "attribute": "data.weaponDefensive"
+                  },
+                  {
+                    "title": "Weapon.DefensiveValue",
+                    "type": "number",
+                    "attribute": "data.defensiveValue",
+                    "visibleIf": "{{data.weaponDefensive}}"
+                  },
+                  {
+                    "title": "Weapon.AmmunitionRequirement",
+                    "type": "toggle",
+                    "attribute": "data.ammunitionRequirement"
+                  },
+                  {
+                    "title": "Weapon.AmmunitionType",
+                    "type": "picker",
+                    "attribute": "data.ammunitionType",
+                    "attributeType": "Ammunition",
+                    "visibleIf": "{{data.ammunitionRequirement}}"
+                  }
+                ]
+              },
+              {
+                "title": "Weapon.Property",
+                "type": "multiPicker",
+                "attribute": "data.weaponProperty",
+                "attributeType": "WeaponProperty"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visibleIf": "{{data.itemCategory == 'AdventuringGear'}}",
+      "fields": [
+        {
+          "title": "Item.GearType",
+          "type": "picker",
+          "attribute": "data.gearType",
+          "attributeType": "ItemAdventuringGear"
+        }
+      ]
+    }
+  ]
+}
