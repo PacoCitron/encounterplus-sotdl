@@ -171,6 +171,10 @@
     ],
     "sort": [
       {
+        "attribute": "data.rank",
+        "title": "Common.Rank"
+      },
+      {
         "attribute": "name",
         "title": "Common.Name"
       }
