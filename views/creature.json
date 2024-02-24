@@ -327,7 +327,7 @@
   },
   "attributes": [
     {
-      "data.xp": "#{{data.hp}}",
+      "data.xp": "#{{data.creatureDifficulty}}",
       "data.armor": "#{{data.defense|integer}}",
       "data.perceptionModifier": "{% if data.perception %}#{% eval %}{{data.perception}}-10{% endeval %}{% endif %}",
       "data.strengthModifier": "#{% eval %}{{data.attributeStrength}}-10{% endeval %}",
