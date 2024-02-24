@@ -1,0 +1,118 @@
+{
+    "Armor": [
+      "Clothing",
+      "Soft Leather",
+      "Hard Leather",
+      "Brigandine",
+      "Mail",
+      "Scale",
+      "Plate and Mail",
+      "Full PLate",
+      "Small shield",
+      "Large shield"
+    ],
+    "CreatureDifficulty": [
+      "1",
+      "5",
+      "10",
+      "25",
+      "50",
+      "100",
+      "250",
+      "500"
+    ],
+    "Affliction": [
+      "Asleep",
+      "Blinded",
+      "Charmed",
+      "Compelled",
+      "Dazed",
+      "Deafened",
+      "Defenseless",
+      "Diseased",
+      "Fatigued",
+      "Frightened",
+      "Grabbed",
+      "Immobilized",
+      "Impaired",
+      "Poisoned",
+      "Prone",
+      "Slowed",
+      "Stunned",
+      "Surprised",
+      "Unconscious"
+    ],
+    "Sense": [
+      "shadowsight",
+      "darksight",
+      "sightless",
+      "truesight"
+    ],
+    "Size": [
+      "1/4",
+      "1/2",
+      "1",
+      "2",
+      "3"
+    ],
+    "SpellDurationUnit": [
+      "round",
+      "minute",
+      "hour",
+      "day"
+    ],
+    "SpellDurationSpecific": [
+      "Concentration",
+      "EffectDescription"
+    ],
+    "SpellRank": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "SpellTradition": [
+      "Air",
+      "Alteration",
+      "Arcana",
+      "Battle",
+      "Celestial",
+      "Chaos",
+      "Conjuration",
+      "Curse",
+      "Destruction",
+      "Divination",
+      "Earth",
+      "Enchantment",
+      "Fire",
+      "Forbidden",
+      "Illusion",
+      "Life",
+      "Nature",
+      "Necromancy",
+      "Primal",
+      "Protection",
+      "Rune",
+      "Shadow",
+      "Song",
+      "Storm",
+      "Technomancy",
+      "Telepathy",
+      "Teleportation",
+      "Theurgy",
+      "Time",
+      "Transformation",
+      "Water"
+    ],
+    "SpellType": [
+      "Attack",
+      "Utility"
+    ]
+  }

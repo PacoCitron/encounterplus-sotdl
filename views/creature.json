@@ -1,0 +1,281 @@
+{
+  "debug": false,
+  "spacing": 2,
+  "padding": [
+    20
+  ],
+  "footer": true,
+  "images": true,
+  "type": "vStack",
+  "width": 0,
+  "views": [
+    {
+      "type": "hStack",
+      "width": 0,
+      "bgColor": "#000000",
+      "views": [
+        {
+          "style": "creatureTitle",
+          "value": "**{{name|uppercase}}**",
+          "padding": [
+            4,
+            8,
+            4,
+            0
+          ]
+        },
+        {
+          "style": "creatureSubtitle",
+          "value": "{% if data.creatureDifficulty %} **{{'Creature.Difficulty'|l|uppercase}} {{data.creatureDifficulty|uppercase}}** {% endif %}",
+          "alignment": "trailing",
+          "padding": [
+            4,
+            8,
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vStack",
+      "width": 0,
+      "bgColor": "#9B0619",
+      "views": [
+        {
+          "style": "creatureSubtitle",
+          "value": "***{{data.creatureDescriptor}} {% if data.specialDescriptor %}({{data.specialDescriptor}}){% endif %}{% if data.disturbingAppearance %} {{data.appearanceDetail}}{% endif %} {% if data.size %}de Gabarit {{data.size}}*** {% endif %}",
+          "padding": [
+            2,
+            8,
+            2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vStack",
+      "width": 0,
+      "views": [
+        {
+          "type": "text",
+          "style": "creatureText",
+          "value": "**{{'Creature.Perception'|l}}** {{data.creaturePerception}} ({{data.modCreaturePerception|signed}}) ; {{data.sense|map: 'Sense'|lowercase}}"
+        },
+        {
+          "type": "text",
+          "style": "creatureText",
+          "value": "**{{'Common.Defense'|l}}** {{data.defense}} ({{data.armor|map: 'Armor'|lowercase}}) ; **{{'Common.Health'|l}}** {{data.healt}} ; **{{'Common.Insanity'|l}}** {{data.insanity|default: 0}} ; **{{'Common.Corruption'|l}}** {{data.corruption|default: 0}} "
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "width": 0,
+      "views": [
+        {
+          "type": "text",
+          "style": "creatureText",
+          "value": "**{{'Attribute.Strength'|l}}** {{data.attributeStrength}} ({{data.strModifier|signed}})"
+        },
+        {
+          "type": "text",
+          "style": "creatureText",
+          "value": "**{{'Attribute.Agility'|l}}** {{data.attributeAgility}} ({{data.agiModifier|signed}})"
+        },
+        {
+          "type": "text",
+          "style": "creatureText",
+          "value": "**{{'Attribute.Intellect'|l}}** {{data.attributeIntellect}} ({{data.intModifier|signed}})"
+        },
+        {
+          "type": "text",
+          "style": "creatureText",
+          "value": "**{{'Attribute.Will'|l}}** {{data.attributeWill}} ({{data.wilModifier|signed}})"
+        }
+      ]
+    },
+    {
+      "type": "vStack",
+      "width": 0,
+      "views": [
+        {
+          "type": "text",
+          "style": "creatureText",
+          "value": "**{{'Common.Speed'|l}}** ({{data.speed}}) ; {{data.specialMovement|lowercase}}"
+        },
+        {
+          "type": "text",
+          "style": "creatureText",
+          "value": "{% if data.immune %} **{{'Common.Immune'|l}}.** {{data.immune|map: 'Affliction'|lowercase}}{% endif %}"
+        },
+        {
+          "type": "list",
+          "attribute": "data.creatureTrait",
+          "views": [
+            {
+              "type": "text",
+              "style": "creatureText",
+              "value": "{% if name %}**{{name}}.**{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "style": "creatureSection",
+          "value": "**{{'Attack.Options'|l|uppercase}}**",
+          "bgColor": "#A7A9AC",
+          "padding": [
+            2,
+            8,
+            2,
+            0
+          ]
+        },
+        {
+          "type": "list",
+          "attribute": "data.attackOption",
+          "views": [
+            {
+              "type": "text",
+              "style": "creatureText",
+              "value": "{% if name %}**{{name}}.**{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "style": "creatureSection",
+          "value": "**{{'Special.Actions'|l|uppercase}}**",
+          "bgColor": "#A7A9AC",
+          "padding": [
+            2,
+            8,
+            2,
+            0
+          ]
+        },
+        {
+          "type": "list",
+          "attribute": "data.attackSpecial",
+          "views": [
+            {
+              "type": "text",
+              "style": "creatureText",
+              "value": "{% if name %}**{{name}}.**{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "style": "creatureSection",
+          "value": "**{{'Special.Actions'|l|uppercase}}**",
+          "bgColor": "#A7A9AC",
+          "padding": [
+            2,
+            8,
+            2,
+            0
+          ]
+        },
+        {
+          "type": "list",
+          "attribute": "data.actionSpecial",
+          "views": [
+            {
+              "type": "text",
+              "style": "creatureText",
+              "value": "{% if name %}**{{name}}.**{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "style": "creatureSection",
+          "value": "**{{'Common.Magic'|l|uppercase}}**",
+          "bgColor": "#A7A9AC",
+          "padding": [
+            2,
+            8,
+            2,
+            0
+          ]
+        },
+        {
+          "type": "text",
+          "style": "creatureText",
+          "value": "**{{'Magic.Power'|l}}** {{data.magicPower}}"
+        },
+        {
+          "type": "list",
+          "attribute": "data.spellTraditionList",
+          "views": [
+            {
+              "type": "text",
+              "style": "creatureText",
+              "value": "{% if name %}**{{name}}.**{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "style": "creatureSection",
+          "value": "**{{'Common.RoundEnd'|l|uppercase}}**",
+          "bgColor": "#A7A9AC",
+          "padding": [
+            2,
+            8,
+            2,
+            0
+          ]
+        },
+        {
+          "type": "list",
+          "attribute": "data.roundEnd",
+          "views": [
+            {
+              "type": "text",
+              "style": "creatureText",
+              "value": "{% if name %}**{{name}}.**{% endif %} {{text}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#9B0619",
+      "height": 1.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "style": "creatureText",
+      "padding": [
+        4,
+        0
+      ],
+      "type": "text",
+      "value": "{{descr}}"
+    },
+    {
+      "type": "flow",
+      "alignment": "trailing",
+      "width": 0,
+      "views": [
+        {
+          "type": "text",
+          "style": "sourceText",
+          "value": "*{{footer}}*"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "value": "{{image}}",
+      "link": "{{image}}"
+    }
+  ]
+}

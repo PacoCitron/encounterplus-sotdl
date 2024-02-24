@@ -1,0 +1,95 @@
+{
+  "Armor": {
+    "Clothing": "Armor.Clothing",
+    "Soft Leather": "Armor.SoftLeather",
+    "Hard Leather": "Armor.HardLeather",
+    "Brigandine": "Armor.Brigandine",
+    "Mail": "Armor.Mail",
+    "Scale": "Armor.Scale",
+    "Plate and Mail": "Armor.PlateAndMail",
+    "Full PLate": "Armor.FullPLate",
+    "Small shield": "Armor.SmallShield",
+    "Large shield": "Armor.LargeShield"
+  },
+  "Affliction": {
+    "Asleep": "Affliction.Asleep",
+    "Blinded": "Affliction.Blinded",
+    "Charmed": "Affliction.Charmed",
+    "Compelled": "Affliction.Compelled",
+    "Dazed": "Affliction.Dazed",
+    "Deafened": "Affliction.Deafened",
+    "Defenseless": "Affliction.Defenseless",
+    "Diseased": "Affliction.Diseased",
+    "Fatigued": "Affliction.Fatigued",
+    "Frightened": "Affliction.Frightened",
+    "Grabbed": "Affliction.Grabbed",
+    "Immobilized": "Affliction.Immobilized",
+    "Impaired": "Affliction.Impaired",
+    "Poisoned": "Affliction.Poisoned",
+    "Prone": "Affliction.Prone",
+    "Slowed": "Affliction.Slowed",
+    "Stunned": "Affliction.Stunned",
+    "Surprised": "Affliction.Surprised",
+    "Unconscious": "Affliction.Unconscious"
+  },
+  "Sense": {
+    "shadowsight": "Sense.Shadowsight",
+    "darksight": "Sense.Darksight",
+    "sightless": "Sense.Sightless",
+    "truesight": "Sense.Truesight"
+  },
+  "Size": {
+    "1": "Size.1",
+    "2": "Size.2",
+    "3": "Size.3orlarger",
+    "1/4": "Size.1/4orsmaller",
+    "1/2": "Size.1/2"
+  },
+  "SpellDurationUnit": {
+    "round": "Unit.Round",
+    "minute": "Unit.Minute",
+    "hour": "Unit.Hour",
+    "day": "Unit.Day"
+  },
+  "SpellDurationSpecific": {
+    "Concentration": "Spell.Concentration",
+    "EffectDescription": "Spell.EffectDescription"
+  },
+  "SpellTradition": {
+    "Air": "Tradition.Air",
+    "Alteration": "Tradition.Alteration",
+    "Arcana": "Tradition.Arcana",
+    "Battle": "Tradition.Battle",
+    "Celestial": "Tradition.Celestial",
+    "Chaos": "Tradition.Chaos",
+    "Conjuration": "Tradition.Conjuration",
+    "Curse": "Tradition.Curse",
+    "Destruction": "Tradition.Destruction",
+    "Divination": "Tradition.Divination",
+    "Earth": "Tradition.Earth",
+    "Enchantment": "Tradition.Enchantment",
+    "Fire": "Tradition.Fire",
+    "Forbidden": "Tradition.Forbidden",
+    "Illusion": "Tradition.Illusion",
+    "Life": "Tradition.Life",
+    "Nature": "Tradition.Nature",
+    "Necromancy": "Tradition.Necromancy",
+    "Primal": "Tradition.Primal",
+    "Protection": "Tradition.Protection",
+    "Rune": "Tradition.Rune",
+    "Shadow": "Tradition.Shadow",
+    "Song": "Tradition.Song",
+    "Storm": "Tradition.Storm",
+    "Technomancy": "Tradition.Technomancy",
+    "Telepathy": "Tradition.Telepathy",
+    "Teleportation": "Tradition.Teleportation",
+    "Theurgy": "Tradition.Theurgy",
+    "Time": "Tradition.Time",
+    "Transformation": "Tradition.Transformation",
+    "Water": "Tradition.Water"
+  },
+  "SpellType": {
+    "Attack": "Spell.TypeAttack",
+    "Utility": "Spell.TypeUtility"
+  }
+}

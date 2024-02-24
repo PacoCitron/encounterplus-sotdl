@@ -1,0 +1,99 @@
+{
+  "debug": false,
+  "spacing": 4,
+  "padding": [
+    20
+  ],
+  "footer": true,
+  "images": true,
+  "type": "vStack",
+  "width": 0,
+  "views": [
+    {
+      "type": "hStack",
+      "width": 0,
+      "views": [
+        {
+          "style": "spellTitle",
+          "value": "**{{name|uppercase}}**"
+        },
+        {
+          "style": "spellSubtitle",
+          "value": "**{{data.spellTradition|map: 'SpellTradition'|uppercase}} {{data.spellType|map: 'SpellType'|uppercase}} {{data.spellRank|uppercase}}**",
+          "alignment": "trailing"
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "bgColor": "#000000",
+      "height": 2,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "type": "list",
+      "attribute": "data.spellOptions",
+      "views": [
+        {
+          "type": "text",
+          "style": "spellText",
+          "value": "{% if name %}**{{name}}.**{% endif %} {{text}}"
+        }
+      ]
+    },
+    {
+      "style": "spellText",
+      "value": "{% if data.spellDuration %} **{{'Spell.Duration'|l}}.** {% include 'spell-duration.md' data %}{% endif %}"
+    },
+    {
+      "type": "divider",
+      "bgColor": "#9B0619",
+      "height": 1.5,
+      "padding": [
+        0
+      ]
+    },
+    {
+      "style": "spellText",
+      "padding": [
+        4,
+        0
+      ],
+      "type": "text",
+      "value": "{{descr}}"
+    },
+    {
+      "type": "list",
+      "attribute": "data.specialEffects",
+      "views": [
+        {
+          "type": "text",
+          "style": "spellText",
+          "value": "{% if name %}**{{name}}.**{% endif %} {{text}}"
+        }
+      ]
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "flow",
+      "alignment": "trailing",
+      "width": 0,
+      "views": [
+        {
+          "type": "text",
+          "style": "sourceText",
+          "value": "*{{footer}}*"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "value": "{{image}}",
+      "link": "{{image}}"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "title": "Creature",
+  "sections": [
+    {
+      "type": "group",
+      "title": "Creature.BasicInformation",
+      "fields": [
+        {
+          "title": "Creature.Descriptor",
+          "type": "text",
+          "attribute": "data.creatureDescriptor"
+        },
+        {
+          "title": "Creature.SpecialDescriptor",
+          "attribute": "data.specialDescriptor"
+        },
+        {
+          "title": "Creature.DisturbingAppearance",
+          "type": "toggle",
+          "attribute": "data.disturbingAppearance"
+        },
+        {
+          "title": "Creature.AppearanceDetail",
+          "type": "text",
+          "attribute": "data.appearanceDetail",
+          "visibleIf": "{{data.disturbingAppearance}}"
+        },
+        {
+          "title": "Common.Size",
+          "type": "picker",
+          "attribute": "data.size",
+          "attributeType": "Size"
+        },
+        {
+          "title": "Creature.Difficulty",
+          "type": "picker",
+          "attribute": "data.creatureDifficulty",
+          "attributeType": "CreatureDifficulty"
+        }
+      ]
+    },
+    {
+      "title": "Creature.Characteristics",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Creature.Perception",
+          "type": "number",
+          "attribute": "data.creaturePerception"
+        },
+        {
+          "title": "Creature.MODPerception",
+          "type": "number",
+          "attribute": "data.modCreaturePerception"
+        },
+        {
+          "title": "Common.Sense",
+          "type": "multiPicker",
+          "attribute": "data.sense",
+          "attributeType": "Sense"
+        },
+        {
+          "title": "Common.Defense",
+          "type": "number",
+          "attribute": "data.defense"
+        },
+        {
+          "title": "Common.Armor",
+          "type": "picker",
+          "attribute": "data.armor",
+          "attributeType": "Armor"
+        },
+        {
+          "title": "Common.Health",
+          "type": "number",
+          "attribute": "data.healt"
+        },
+        {
+          "title": "Common.Insanity",
+          "type": "number",
+          "attribute": "data.insanity",
+          "placeholder": "Default"
+        },
+        {
+          "title": "Common.Corruption",
+          "type": "number",
+          "attribute": "data.corruption",
+          "placeholder": "Default"
+        },
+        {
+          "title": "Common.Speed",
+          "type": "number",
+          "attribute": "data.speed"
+        },
+        {
+          "title": "Movement.Special",
+          "type": "text",
+          "attribute": "data.specialMovement"
+        },
+        {
+          "title": "Common.Immune",
+          "type": "multiPicker",
+          "attribute": "data.immune",
+          "attributeType": "Affliction"
+        },
+        {
+          "title": "Creature.MagicPower",
+          "type": "number",
+          "attribute": "data.magicPower"
+        }
+      ]
+    },
+    {
+      "title": "Creature.Attributes",
+      "type": "group",
+      "fields": [
+        {
+          "type": "hStack",
+          "fields": [
+            {
+              "title": "Attribute.Strength",
+              "type": "number",
+              "alignment": "top",
+              "attribute": "data.attributeStrength"
+            },
+            {
+              "title": "Attribute.Agility",
+              "type": "number",
+              "alignment": "top",
+              "attribute": "data.attributeAgility"
+            },
+            {
+              "title": "Attribute.Intellect",
+              "type": "number",
+              "alignment": "top",
+              "attribute": "data.attributeIntellect"
+            },
+            {
+              "title": "Attribute.Will",
+              "type": "number",
+              "alignment": "top",
+              "attribute": "data.attributeWill"
+            }
+          ]
+        },
+        {
+          "type": "hStack",
+          "fields": [
+            {
+              "title": "Attribute.STRModifier",
+              "type": "number",
+              "alignment": "top",
+              "attribute": "data.strModifier"
+            },
+            {
+              "title": "Attribute.AGIModifier",
+              "type": "number",
+              "alignment": "top",
+              "attribute": "data.agiModifier"
+            },
+            {
+              "title": "Attribute.INTModifier",
+              "type": "number",
+              "alignment": "top",
+              "attribute": "data.intModifier"
+            },
+            {
+              "title": "Attribute.WILModifier",
+              "type": "number",
+              "alignment": "top",
+              "attribute": "data.wilModifier"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Creature.Trait",
+      "type": "list",
+      "attribute": "data.creatureTrait",
+      "form": {
+        "title": "Creature.Trait",
+        "partial": "generic-feature"
+      }
+    },
+    {
+      "title": "Attack.Options",
+      "type": "list",
+      "attribute": "data.attackOption",
+      "form": {
+        "title": "Attack.Options",
+        "partial": "generic-feature"
+      }
+    },
+    {
+      "title": "Attacks.Special",
+      "type": "list",
+      "attribute": "data.attackSpecial",
+      "form": {
+        "title": "Attack.Special",
+        "partial": "generic-feature"
+      }
+    },
+    {
+      "title": "Action.Special",
+      "type": "list",
+      "attribute": "data.actionSpecial",
+      "form": {
+        "title": "Action.Special",
+        "partial": "generic-feature"
+      }
+    },
+    {
+      "title": "Common.Magic",
+      "type": "list",
+      "attribute": "data.spellTraditionList",
+      "form": {
+        "title": "Creature.Magic.Liste",
+        "partial": "generic-feature"
+      }
+    },
+    {
+      "title": "Common.RoundEnd",
+      "type": "list",
+      "attribute": "data.roundEnd",
+      "form": {
+        "title": "Common.RoundEnd",
+        "partial": "generic-feature"
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "title": "Spell",
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Spell.Tradition",
+          "type": "picker",
+          "attribute": "data.spellTradition",
+          "attributeType": "SpellTradition"
+        },
+        {
+          "title": "Spell.Type",
+          "type": "picker",
+          "attribute": "data.spellType",
+          "attributeType": "SpellType"
+        },
+        {
+          "title": "Spell.Rank",
+          "type": "picker",
+          "attribute": "data.spellRank",
+          "attributeType": "SpellRank"
+        },
+        {
+          "title": "Spell.Duration",
+          "type": "form",
+          "text": "{% include 'spell-duration.md' data %}",
+          "form": {
+            "title": "Spell.Duration",
+            "sections": [
+              {
+                "type": "group",
+                "fields": [
+                  {
+                    "title": "Spell.Duration",
+                    "type": "number",
+                    "attribute": "data.spellDuration"
+                  }
+                ]
+              },
+              {
+                "title": "Spell.DurationUnit",
+                "type": "picker",
+                "attribute": "data.durationUnit",
+                "attributeType": "SpellDurationUnit"
+              },
+              {
+                "title": "Spell.DurationSpecific",
+                "type": "picker",
+                "attribute": "data.durationSpecific",
+                "attributeType": "SpellDurationSpecific"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Spell.Options",
+      "type": "list",
+      "attribute": "data.spellOptions",
+      "form": {
+        "title": "Spell.Options",
+        "partial": "generic-feature"
+      }
+    },
+    {
+      "title": "Spell.SpecialEffects",
+      "type": "list",
+      "attribute": "data.specialEffects",
+      "form": {
+        "title": "Spell.SpecialEffects",
+        "partial": "generic-feature"
+      }
+    }
+  ]
+}

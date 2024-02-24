@@ -1,0 +1,128 @@
+{
+  "tintColor": "#58180D",
+  "primaryColor": "#9C2B1B",
+  "textColor": "#000000",
+  "dividerColor": "#cccccc",
+  "bgColor": "#f5f5f5",
+  "bgImage": "/images/sotdl_paper.png",
+  "textStyles": {
+    "body": {
+      "font": "NotoSans",
+      "size": 15
+    },
+    "label": {
+      "font": "NotoSans",
+      "color": "#58180D",
+      "size": 15
+    },
+    "title": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "caps": true,
+      "size": 30
+    },
+    "spellTitle": {
+      "font": "Athelas",
+      "color": "#9B0619",
+      "caps": true,
+      "size": 20
+    },
+    "creatureTitle": {
+      "font": "Athelas",
+      "color": "#FFFFFF",
+      "caps": true,
+      "size": 20
+    },
+    "spellSubtitle": {
+      "font": "Athelas",
+      "color": "#9B0619",
+      "caps": true,
+      "size": 15
+    },
+    "creatureSubtitle": {
+      "font": "Athelas",
+      "color": "#FFFFFF",
+      "caps": true,
+      "size": 15
+    },
+    "creatureSection": {
+      "font": "Athelas",
+      "color": "#000000",
+      "caps": true,
+      "size": 15
+    },
+    "spellText": {
+      "font": "Arial",
+      "color": "#000000",
+      "caps": true,
+      "size": 15,
+      "lineSpacing": 0.4,
+    },
+    "creatureText": {
+      "font": "Arial",
+      "color": "#000000",
+      "caps": true,
+      "size": 15,
+      "lineSpacing": 0.4,
+    },
+    "sourceText": {
+      "font": "Arial",
+      "color": "#000000",
+      "caps": true,
+      "size": 12,
+    },
+    "subtitle": {
+      "font": "NotoSans-Italic",
+      "size": 15
+    },
+    "heading": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "caps": true
+    },
+    "heading1": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "caps": true,
+      "size": 28
+    },
+    "heading2": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "caps": true,
+      "size": 25,
+      "divider": true
+    },
+    "heading3": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "caps": true,
+      "size": 22
+    },
+    "heading4": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "caps": true,
+      "size": 20
+    },
+    "heading5": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "size": 18
+    },
+    "heading6": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "size": 16
+    },
+    "footer": {
+      "font": "Baramond-Italic",
+      "size": 18,
+      "alignment": "center"
+    },
+    "icons": {
+      "font": "Baramond",
+      "size": 50
+    }
+  }
+}
